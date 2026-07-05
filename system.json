@@ -1,0 +1,29 @@
+{
+    "id": "giharadfastplay",
+    "title": "Giharad RPG Fastplay",
+    "description": "Sistema oficial do Giharad RPG Fastplay construído do zero para o Foundry Virtual Tabletop.",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "giharad-rpg"
+        }
+    ],
+    "esmodules": [
+        "module/giharad.mjs"
+    ],
+    "styles": [
+        "styles/giharad.css"
+    ],
+    "packs": [],
+    "gridDistance": 1.5,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "pv.value",
+    "secondaryTokenAttribute": "pa.value",
+    "compatibility": {
+        "minimum": "11",
+        "verified": "12",
+        "maximum": "13"
+    },
+    "manifest": "https://raw.githubusercontent.com/giharad-rpg/giharadfastplay/main/system.json",
+    "download": "https://github.com/giharad-rpg/giharadfastplay/archive/refs/heads/main.zip"
+}

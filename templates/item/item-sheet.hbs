@@ -1,0 +1,56 @@
+<form class="{{cssClass}} giharad-sheet-container" autocomplete="off">
+    <header class="sheet-header">
+        <div class="header-details">
+            <h1 class="charname">
+                <input name="name" type="text" value="{{item.name}}" placeholder="Nome do Item"/>
+            </h1>
+        </div>
+    </header>
+
+    <section class="sheet-body panel-box-bordered">
+        {{#if (eq item.type 'ataque')}}
+        <div class="grid grid-2col mb-15">
+            <div><span class="stat-label">Categoria</span><input type="text" name="system.categoria" value="{{system.categoria}}" placeholder="Ex: Simples Corpo-a-Corpo" /></div>
+            <div><span class="stat-label">Atributo Base</span>
+                <select name="system.atributo">
+                    <option value="fisico" {{#if (eq system.atributo 'fisico')}}selected{{/if}}>Físico</option>
+                    <option value="reflexos" {{#if (eq system.atributo 'reflexos')}}selected{{/if}}>Reflexos</option>
+                    <option value="mente" {{#if (eq system.atributo 'mente')}}selected{{/if}}>Mente</option>
+                    <option value="carisma" {{#if (eq system.atributo 'carisma')}}selected{{/if}}>Carisma</option>
+                </select>
+            </div>
+        </div>
+        <div class="grid grid-3col mb-15">
+            <div><span class="stat-label">Dano</span><input type="text" name="system.dano" value="{{system.dano}}" /></div>
+            <div><span class="stat-label">Tipo de Dano</span><input type="text" name="system.tipo_dano" value="{{system.tipo_dano}}" placeholder="Ex: Corte" /></div>
+            <div><span class="stat-label">Bônus Acerto</span><input type="number" name="system.bonus_ataque" value="{{system.bonus_ataque}}" /></div>
+        </div>
+        <div class="grid grid-3col mb-15">
+            <div><span class="stat-label">Alcance</span><input type="text" name="system.alcance" value="{{system.alcance}}" /></div>
+            <div><span class="stat-label">Crítico (Margem)</span><input type="text" name="system.margem" value="{{system.margem}}" placeholder="Ex: 19" /></div>
+            <div><span class="stat-label">Multiplicador</span><input type="text" name="system.multiplicador_critico" value="{{system.multiplicador_critico}}" placeholder="Ex: x2" /></div>
+        </div>
+        <div class="grid mb-15">
+            <div><span class="stat-label">Propriedades</span><input type="text" name="system.propriedades" value="{{system.propriedades}}" placeholder="Ex: Ágil, Acuidade..." /></div>
+        </div>
+        {{/if}}
+
+        {{#if (eq item.type 'feitico')}}
+        <div class="grid grid-2col mb-15">
+            <div><span class="stat-label">Círculo</span><input type="number" name="system.circulo" value="{{system.circulo}}" /></div>
+            <div><span class="stat-label">Escola</span><input type="text" name="system.escola" value="{{system.escola}}" /></div>
+        </div>
+        {{/if}}
+
+        {{#if (eq item.type 'item')}}
+        <div class="grid grid-3col mb-15">
+            <div><span class="stat-label">Qtd</span><input type="number" name="system.qtd" value="{{system.qtd}}" /></div>
+            <div><span class="stat-label">Peso/Espaço</span><input type="number" name="system.espacos" value="{{system.espacos}}" /></div>
+            <div><span class="stat-label">Bônus Defesa</span><input type="number" name="system.bonus_defesa" value="{{system.bonus_defesa}}" /></div>
+        </div>
+        {{/if}}
+
+        <h3 class="section-title mt-15">Descrição</h3>
+        {{editor enrichedDescription target="system.descricao" button=true editable=editable engine="prosemirror"}}
+    </section>
+</form>

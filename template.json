@@ -1,0 +1,299 @@
+{
+    "Actor": {
+        "types": [
+            "character",
+            "npc"
+        ],
+        "templates": {
+            "base": {
+                "nivel": 1,
+                "classe": "",
+                "especie": "",
+                "antecedente": "",
+                "guardiao": "",
+                "ascensao": "",
+                "fisico": 4,
+                "fisico_exp": 0,
+                "fisico_inc": 0,
+                "bonus_fisico": 0,
+                "mente": 4,
+                "mente_exp": 0,
+                "mente_inc": 0,
+                "bonus_mente": 0,
+                "carisma": 4,
+                "carisma_exp": 0,
+                "carisma_inc": 0,
+                "bonus_carisma": 0,
+                "reflexos": 4,
+                "reflexos_exp": 0,
+                "reflexos_inc": 0,
+                "bonus_reflexos": 0,
+                "defesa": 10,
+                "defesa_base": 10,
+                "defesa_bonus": 0,
+                "defesa_penalidade": 0,
+                "defesa_temp": 0,
+                "pv": {
+                    "value": 0,
+                    "max": 0,
+                    "temp": 0,
+                    "bonus": 0
+                },
+                "pa": {
+                    "value": 0,
+                    "max": 0,
+                    "temp": 0,
+                    "bonus": 0
+                },
+                "ph": {
+                    "value": 0,
+                    "max": 0,
+                    "temp": 0,
+                    "bonus": 0
+                },
+                "pg": {
+                    "value": 0,
+                    "max": 0,
+                    "temp": 0,
+                    "bonus": 0
+                },
+                "morte1": false,
+                "morte2": false,
+                "morte3": false,
+                "morte4": false,
+                "fadiga1": false,
+                "fadiga2": false,
+                "fadiga3": false,
+                "fadiga4": false,
+                "cicatriz1": false,
+                "cicatriz2": false,
+                "cicatriz3": false,
+                "cicatriz4": false,
+                "deslocamento": {
+                    "caminhada": 9,
+                    "natacao": 0,
+                    "escalada": 0,
+                    "voo": 0
+                },
+                "competencias": {
+                    "Aristocracia": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+                    "Artimanha": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+                    "Atuação": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+                    "Condução": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+                    "Coordenação": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+                    "Dissimulação": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+                    "Esoterismo": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+                    "Esquiva": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+                    "Fortitude": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+                    "Manejo Animal": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+                    "Medicina": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+
+                    "Sagacidade": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+                    "Sobrevivência": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+                    "Vontade": {
+                        "treinamento": 0,
+                        "avulso": 0,
+                        "armadura": 0
+                    },
+                    "profissoes": {},
+                    "idiomas": {}
+                },
+                "comp_attrs": {
+                    "Aristocracia": "carisma",
+                    "Artimanha": "reflexos",
+                    "Atuação": "carisma",
+                    "Condução": "reflexos",
+                    "Coordenação": "reflexos",
+                    "Dissimulação": "carisma",
+                    "Esquiva": "reflexos",
+                    "Fortitude": "fisico",
+                    "Manejo Animal": "carisma",
+                    "Medicina": "mente",
+                    "Sagacidade": "mente",
+                    "Sobrevivência": "mente",
+                    "Vontade": "mente",
+                    "Esoterismo": "mente",
+                    "prof_attrs": {},
+                    "idio_attrs": {}
+                },
+                "tradicao": "",
+                "bonus_cd_feitico": 10,
+                "atributo_chave": "reflexos",
+                "slots": {
+                    "l1": {
+                        "value": 0,
+                        "max": 0
+                    },
+                    "l2": {
+                        "value": 0,
+                        "max": 0
+                    },
+                    "l3": {
+                        "value": 0,
+                        "max": 0
+                    },
+                    "l4": {
+                        "value": 0,
+                        "max": 0
+                    },
+                    "l5": {
+                        "value": 0,
+                        "max": 0
+                    },
+                    "l6": {
+                        "value": 0,
+                        "max": 0
+                    }
+                },
+                "dinheiro": {
+                    "ciscados": 0,
+                    "punhados": 0,
+                    "ombrados": 0
+                },
+                "carga": {
+                    "value": 0,
+                    "max": 0,
+                    "bonus": 0
+                },
+                "marca_hafa": "",
+                "leque_destino": "",
+                "notas": ""
+            }
+        },
+        "character": {
+            "templates": [
+                "base"
+            ]
+        },
+        "npc": {
+            "templates": [
+                "base"
+            ]
+        }
+    },
+    "Item": {
+        "types": [
+            "ataque",
+            "habilidade",
+            "feitico",
+            "item"
+        ],
+        "templates": {
+            "base_item": {
+                "descricao": "",
+                "efeito": ""
+            }
+        },
+        "ataque": {
+            "templates": [
+                "base_item"
+            ],
+            "categoria": "Simples",
+            "atributo": "fisico",
+            "dano": "1d6",
+            "tipo_dano": "Corte",
+            "alcance": "Corpo-a-corpo",
+            "margem": "20",
+            "multiplicador_critico": "x2",
+            "explosivo": "",
+            "bonus_ataque": 0,
+            "custo": 0,
+            "tipo_custo": "pa",
+            "propriedades": ""
+        },
+        "dano": "1d6",
+        "tipo_dano": "Corte",
+        "alcance": "Corpo-a-corpo",
+        "margem": "20",
+        "explosivo": "",
+        "bonus_ataque": 0,
+        "custo": 0,
+        "tipo_custo": "pa"
+    },
+    "habilidade": {
+        "templates": [
+            "base_item"
+        ],
+        "tipo": "Passiva",
+        "custo": 0,
+        "tipo_custo": "pa"
+    },
+    "feitico": {
+        "templates": [
+            "base_item"
+        ],
+        "escola": "",
+        "circulo": 1,
+        "alcance": "Curto",
+        "alvo": "",
+        "duracao": "Instantâneo",
+        "resistencia": "",
+        "custo": 0,
+        "tipo_custo": "pa",
+        "superior": ""
+    },
+    "item": {
+        "templates": [
+            "base_item"
+        ],
+        "qtd": 1,
+        "espacos": 1,
+        "valor": 0,
+        "empunhado": false,
+        "vestido": false,
+        "bonus_defesa": 0,
+        "bonus_escudo": 0
+    }
+}
