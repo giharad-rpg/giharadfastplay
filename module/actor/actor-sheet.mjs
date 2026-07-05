@@ -242,13 +242,23 @@ export class GiharadActorSheet extends ActorSheet {
 
         if (type === 'dano' || type === 'explosivo') {
             let formula = iSystem.dano || "0";
+            
+            // Dano de armas corpo-a-corpo soma os passos de bônus de Físico
+            if (iSystem.alcance && iSystem.alcance.toLowerCase().includes('corpo')) {
+                const fisBonus = parseInt(system.bonus_fisico) || 0;
+                if (fisBonus > 0) formula += ` + ${fisBonus}`;
+            }
+
+            let flavor = `Dano de <b>${item.name}</b>`;
+            
             if (type === 'explosivo') {
                 const explNum = parseInt(String(iSystem.explosivo || "").replace(/\+/g, "").trim()) || 0;
                 if (explNum > 0) {
                     formula = formula.replace(/(\d+)d(\d+)/i, (match, count, sides) => `${parseInt(count) + explNum}d${sides}`);
+                    flavor = `🔥 Dano Crítico/Explosivo de <b>${item.name}</b>`;
                 }
             }
-            return this._evaluateAndSendRoll(formula, `Dano de <b>${item.name}</b> (${formula})`);
+            return this._evaluateAndSendRoll(formula, flavor);
         }
 
         const attrKey = iSystem.atributo || 'fisico';
