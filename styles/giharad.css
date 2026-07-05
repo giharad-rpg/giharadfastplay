@@ -253,19 +253,13 @@
 
 /* Chat Cards */
 .giharad.chat-card {
-    background: var(--bg-panel);
-    border: 1px solid var(--panel-border);
-    border-radius: 6px;
-    padding: 10px;
-    color: var(--text-main);
+    padding: 5px;
 }
 .giharad.chat-card .card-content {
-    background: var(--bg-main);
     padding: 8px;
-    border-radius: 4px;
-    border: 1px solid var(--panel-border);
     margin-top: 5px;
-    color: var(--text-main);
+    border-top: 1px solid #7a7971;
+    color: #191813;
 }
 .giharad.chat-card .card-content p {
     margin: 0 0 5px 0;
