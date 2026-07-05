@@ -225,9 +225,48 @@ export class GiharadActorSheet extends ActorSheet {
 
         if (type === 'desc') {
             const desc = await TextEditor.enrichHTML(iSystem.descricao || "", { async: true });
+            let propsHtml = '';
+            
+            if (item.type === 'ataque') {
+                propsHtml = `
+                    <div class="chat-card-props">
+                        <div class="prop-item"><strong>Dano:</strong> ${iSystem.dano || '-'}</div>
+                        <div class="prop-item"><strong>Categoria:</strong> ${iSystem.categoria || '-'}</div>
+                        <div class="prop-item"><strong>Alcance:</strong> ${iSystem.alcance || '-'}</div>
+                        <div class="prop-item"><strong>Margem:</strong> ${iSystem.margem || '20'}</div>
+                        <div class="prop-item"><strong>Explosão:</strong> ${iSystem.explosivo || '-'}</div>
+                        ${iSystem.propriedades ? `<div class="prop-item full-width"><strong>Propriedades:</strong> ${iSystem.propriedades}</div>` : ''}
+                    </div>
+                `;
+            } else if (item.type === 'feitico') {
+                propsHtml = `
+                    <div class="chat-card-props">
+                        <div class="prop-item"><strong>Escola:</strong> ${iSystem.escola || '-'}</div>
+                        <div class="prop-item"><strong>Círculo:</strong> ${iSystem.circulo || '-'}</div>
+                        <div class="prop-item"><strong>Tempo:</strong> ${iSystem.tempo_conjuracao || '-'}</div>
+                        <div class="prop-item"><strong>Alcance:</strong> ${iSystem.alcance || '-'}</div>
+                        <div class="prop-item"><strong>Alvo/Área:</strong> ${iSystem.alvo_area || '-'}</div>
+                        <div class="prop-item"><strong>Duração:</strong> ${iSystem.duracao || '-'}</div>
+                        <div class="prop-item"><strong>Custo:</strong> ${iSystem.custo || '0'} ${String(iSystem.tipo_custo || 'PM').toUpperCase()}</div>
+                        ${iSystem.teste_resistencia ? `<div class="prop-item full-width"><strong>Resistência:</strong> ${iSystem.teste_resistencia}</div>` : ''}
+                        ${iSystem.dano_cura ? `<div class="prop-item full-width"><strong>Dano/Cura:</strong> ${iSystem.dano_cura}</div>` : ''}
+                    </div>
+                `;
+            } else if (item.type === 'habilidade') {
+                propsHtml = `
+                    <div class="chat-card-props">
+                        <div class="prop-item"><strong>Tipo:</strong> ${iSystem.tipo || '-'}</div>
+                        <div class="prop-item"><strong>Custo:</strong> ${iSystem.custo || '0'} ${String(iSystem.tipo_custo || 'PA').toUpperCase()}</div>
+                        ${iSystem.teste ? `<div class="prop-item full-width"><strong>Teste:</strong> ${iSystem.teste}</div>` : ''}
+                        ${iSystem.dano_efeito ? `<div class="prop-item full-width"><strong>Dano/Efeito:</strong> ${iSystem.dano_efeito}</div>` : ''}
+                    </div>
+                `;
+            }
+            
             let content = `
                 <div class="giharad chat-card">
                     <h3 class="section-title">${item.name}</h3>
+                    ${propsHtml}
                     <div class="card-content">
                         ${desc}
                     </div>

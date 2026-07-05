@@ -40,6 +40,32 @@
             <div><span class="stat-label">Círculo</span><input type="number" name="system.circulo" value="{{system.circulo}}" /></div>
             <div><span class="stat-label">Escola</span><input type="text" name="system.escola" value="{{system.escola}}" /></div>
         </div>
+        <div class="grid grid-2col mb-15">
+            <div><span class="stat-label">Tempo de Conjuração</span><input type="text" name="system.tempo_conjuracao" value="{{system.tempo_conjuracao}}" /></div>
+            <div><span class="stat-label">Alcance</span><input type="text" name="system.alcance" value="{{system.alcance}}" /></div>
+            <div><span class="stat-label">Alvo/Área</span><input type="text" name="system.alvo_area" value="{{system.alvo_area}}" /></div>
+            <div><span class="stat-label">Duração</span><input type="text" name="system.duracao" value="{{system.duracao}}" /></div>
+        </div>
+        <div class="grid grid-3col mb-15">
+            <div><span class="stat-label">Custo</span><input type="number" name="system.custo" value="{{system.custo}}" /></div>
+            <div><span class="stat-label">Tipo Custo</span><input type="text" name="system.tipo_custo" value="{{system.tipo_custo}}" placeholder="PM" /></div>
+            <div><span class="stat-label">Teste (Resist.)</span><input type="text" name="system.teste_resistencia" value="{{system.teste_resistencia}}" /></div>
+        </div>
+        <div class="grid mb-15">
+            <div><span class="stat-label">Dano/Cura</span><input type="text" name="system.dano_cura" value="{{system.dano_cura}}" placeholder="Ex: 2d6" /></div>
+        </div>
+        {{/if}}
+
+        {{#if (eq item.type 'habilidade')}}
+        <div class="grid grid-2col mb-15">
+            <div><span class="stat-label">Tipo</span><input type="text" name="system.tipo" value="{{system.tipo}}" placeholder="Passiva, Ação, etc" /></div>
+            <div><span class="stat-label">Teste</span><input type="text" name="system.teste" value="{{system.teste}}" /></div>
+        </div>
+        <div class="grid grid-3col mb-15">
+            <div><span class="stat-label">Custo</span><input type="number" name="system.custo" value="{{system.custo}}" /></div>
+            <div><span class="stat-label">Tipo Custo</span><input type="text" name="system.tipo_custo" value="{{system.tipo_custo}}" placeholder="PA, PM..." /></div>
+            <div><span class="stat-label">Dano/Efeito</span><input type="text" name="system.dano_efeito" value="{{system.dano_efeito}}" /></div>
+        </div>
         {{/if}}
 
         {{#if (eq item.type 'item')}}

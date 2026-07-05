@@ -252,14 +252,7 @@
             "tipo_custo": "pa",
             "propriedades": ""
         },
-        "dano": "1d6",
-        "tipo_dano": "Corte",
-        "alcance": "Corpo-a-corpo",
-        "margem": "20",
-        "explosivo": "",
-        "bonus_ataque": 0,
-        "custo": 0,
-        "tipo_custo": "pa"
+
     },
     "habilidade": {
         "templates": [
@@ -267,7 +260,9 @@
         ],
         "tipo": "Passiva",
         "custo": 0,
-        "tipo_custo": "pa"
+        "tipo_custo": "pa",
+        "dano_efeito": "",
+        "teste": ""
     },
     "feitico": {
         "templates": [
@@ -275,12 +270,14 @@
         ],
         "escola": "",
         "circulo": 1,
+        "tempo_conjuracao": "1 Ação",
         "alcance": "Curto",
-        "alvo": "",
+        "alvo_area": "",
         "duracao": "Instantâneo",
-        "resistencia": "",
+        "teste_resistencia": "",
+        "dano_cura": "",
         "custo": 0,
-        "tipo_custo": "pa",
+        "tipo_custo": "pm",
         "superior": ""
     },
     "item": {
