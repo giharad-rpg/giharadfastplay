@@ -52,9 +52,20 @@ export class GiharadActor extends Actor {
 
         // Default Attributes
         system.fisico = system.fisico || 4;
+        system.fisico_exp = parseInt(system.fisico_exp) || 0;
+        system.fisico_inc = parseInt(system.fisico_inc) || 0;
+
         system.mente = system.mente || 4;
+        system.mente_exp = parseInt(system.mente_exp) || 0;
+        system.mente_inc = parseInt(system.mente_inc) || 0;
+
         system.carisma = system.carisma || 4;
+        system.carisma_exp = parseInt(system.carisma_exp) || 0;
+        system.carisma_inc = parseInt(system.carisma_inc) || 0;
+
         system.reflexos = system.reflexos || 4;
+        system.reflexos_exp = parseInt(system.reflexos_exp) || 0;
+        system.reflexos_inc = parseInt(system.reflexos_inc) || 0;
 
         const nivel = parseInt(system.nivel) || 1;
         const classe = system.classe;
