@@ -256,8 +256,6 @@ export class GiharadActorSheet extends ActorSheet {
                     <div class="chat-card-props">
                         <div class="prop-item"><strong>Tipo:</strong> ${iSystem.tipo || '-'}</div>
                         <div class="prop-item"><strong>Custo:</strong> ${iSystem.custo || '0'}</div>
-                        ${iSystem.teste ? `<div class="prop-item full-width"><strong>Teste:</strong> ${iSystem.teste}</div>` : ''}
-                        ${iSystem.dano_efeito ? `<div class="prop-item full-width"><strong>Dano/Efeito:</strong> ${iSystem.dano_efeito}</div>` : ''}
                     </div>
                 `;
             }

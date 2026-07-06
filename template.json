@@ -256,9 +256,7 @@
                 "base_item"
             ],
             "tipo": "Passiva",
-            "custo": 0,
-            "dano_efeito": "",
-            "teste": ""
+            "custo": 0
         },
         "feitico": {
             "templates": [
