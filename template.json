@@ -249,45 +249,42 @@
             "explosivo": "+1",
             "bonus_ataque": 0,
             "custo": 0,
-            "tipo_custo": "pa",
             "propriedades": ""
         },
-
-    },
-    "habilidade": {
-        "templates": [
-            "base_item"
-        ],
-        "tipo": "Passiva",
-        "custo": 0,
-        "tipo_custo": "pa",
-        "dano_efeito": "",
-        "teste": ""
-    },
-    "feitico": {
-        "templates": [
-            "base_item"
-        ],
-        "escola": "",
-        "circulo": 1,
-        "tempo_conjuracao": "1 Ação",
-        "alcance": "Curto",
-        "alvo_area": "",
-        "duracao": "Instantâneo",
-        "teste_resistencia": "",
-        "dano_cura": "",
-        "superior": ""
-    },
-    "item": {
-        "templates": [
-            "base_item"
-        ],
-        "qtd": 1,
-        "espacos": 1,
-        "valor": 0,
-        "empunhado": false,
-        "vestido": false,
-        "bonus_defesa": 0,
-        "bonus_escudo": 0
+        "habilidade": {
+            "templates": [
+                "base_item"
+            ],
+            "tipo": "Passiva",
+            "custo": 0,
+            "dano_efeito": "",
+            "teste": ""
+        },
+        "feitico": {
+            "templates": [
+                "base_item"
+            ],
+            "escola": "",
+            "circulo": 1,
+            "tempo_conjuracao": "1 Ação",
+            "alcance": "Curto",
+            "alvo_area": "",
+            "duracao": "Instantâneo",
+            "teste_resistencia": "",
+            "dano_cura": "",
+            "superior": ""
+        },
+        "item": {
+            "templates": [
+                "base_item"
+            ],
+            "qtd": 1,
+            "espacos": 1,
+            "valor": 0,
+            "empunhado": false,
+            "vestido": false,
+            "bonus_defesa": 0,
+            "bonus_escudo": 0
+        }
     }
 }
