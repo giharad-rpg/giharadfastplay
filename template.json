@@ -276,8 +276,6 @@
         "duracao": "Instantâneo",
         "teste_resistencia": "",
         "dano_cura": "",
-        "custo": 0,
-        "tipo_custo": "pm",
         "superior": ""
     },
     "item": {

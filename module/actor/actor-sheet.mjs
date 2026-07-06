@@ -247,7 +247,6 @@ export class GiharadActorSheet extends ActorSheet {
                         <div class="prop-item"><strong>Alcance:</strong> ${iSystem.alcance || '-'}</div>
                         <div class="prop-item"><strong>Alvo/Área:</strong> ${iSystem.alvo_area || '-'}</div>
                         <div class="prop-item"><strong>Duração:</strong> ${iSystem.duracao || '-'}</div>
-                        <div class="prop-item"><strong>Custo:</strong> ${iSystem.custo || '0'} ${String(iSystem.tipo_custo || 'PM').toUpperCase()}</div>
                         ${iSystem.teste_resistencia ? `<div class="prop-item full-width"><strong>Resistência:</strong> ${iSystem.teste_resistencia}</div>` : ''}
                         ${iSystem.dano_cura ? `<div class="prop-item full-width"><strong>Dano/Cura:</strong> ${iSystem.dano_cura}</div>` : ''}
                     </div>
